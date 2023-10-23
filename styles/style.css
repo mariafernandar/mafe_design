@@ -392,7 +392,7 @@ h3 {
 
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box {
-    margin: 10px;
+    margin: 6px;
 }
 
 .skills-header {
@@ -580,12 +580,13 @@ footer {
     flex-direction: column;
     row-gap: 30px;
     background: #F8F8F8;
-    padding-block: 40px 60px;
+    padding: 40px 60px;
 }
 
 .top-footer p {
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
 }
 
 .middle-footer .footer-menu {
@@ -611,6 +612,7 @@ footer {
 .bottom-footer {
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
 }
 
 /* ----- ANIMATED TEXT INIT ----- */
@@ -655,6 +657,9 @@ footer {
 }
 /* ----- ANIMATED TEXT ENDS ----- */
 
+.flex-skills {
+    display: flex;
+}
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
@@ -786,5 +791,17 @@ footer {
 
     .input-field {
         width: 100%;
+    }
+
+    .flex-skills {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 10px 15px;
+    }
+
+    .footer_menu_list a {
+        margin-inline: 8px;
     }
 }
